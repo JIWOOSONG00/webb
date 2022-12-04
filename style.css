@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.03em;
+    line-height: 150%; 
+}
+
+body{
+    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 헤더 */
+#header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/mainheader.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+/* 메뉴바 */
+.nav{
+    width: 1280px;
+    height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navi{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+}
+
+.navi a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navi a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #fff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.navi a:hover:after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+/* 헤더텍스트 */
+.headertextbox{
+    width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    color: white;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.headertext h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.headertext h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.headertext .ment{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.headertext .date{
+    font-size: 18px;
+    font-weight: 400;
+}
+/* 경복궁소개 */
+#main1{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.main1content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main1img{
+    width: 730px;
+    height: 420px;
+    background-image: url(https://img.freepik.com/free-photo/geyongbokgung-palace-and-car-light-at-sunset-in-seoul-south-korea_335224-270.jpg?w=1060&t=st=1670090215~exp=1670090815~hmac=4f3e451fac390ec30ee1678a79f5b4f44334b1645ea21d082590ac2d054790e9);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.contenttext .text{
+    width: 510px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #616161;
+   
+}
+
+#main1 h2{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    color: #424242;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contenttext a{
+    text-decoration: none;
+    color: #424242;
+    padding: 8px 24px;
+    border: 1px solid #424242;
+    border-radius: 24px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.contenttext a:hover{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #424242;
+    position: absolute;
+    bottom: 0;
+}
+/* 궁중문화축전 */
+#main2 .title{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+.title h2{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    color: #424242;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.title p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #616161;
+    margin-bottom: 32px;
+}
+
+/* 궁중문화축전 */
+#main2{
+    width: 100%;
+}
+.main2contentbox img{
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.main2contentbox{
+    cursor: pointer;
+    
+}
+
+.main2contentbox h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+    margin-bottom: 8px;
+}
+
+.main2contentbox .date{
+    font-size: 16px;
+    color: #616161;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.main2contentbox .place{
+    font-size: 16px;
+    color: #616161;
+    font-weight: 400;
+}
+.main2contentbox:not(:last-child){
+    margin-right: 40px;
+}
+
+.main2content{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+
+.fa-solid{
+    cursor: pointer;
+    position: absolute;
+    color: #999999;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-solid:hover{
+    color: #424242;
+}
+.left{
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right{
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 사진첩 */
+#main3{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.main3title h2{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    color: #424242;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main3title .main3ment{
+    font-size: 18px;
+    font-weight: 400;
+    color: #616161;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main3title .hashtag{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #424242;
+}
+.main3img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main3img img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.main3img .images{
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.main3img img:hover{
+    transform: scale(1.1);
+}
+
+/* 오시는길 */
+#main4{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+#main4 h2{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    color: #424242;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#main4 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #616161;
+    margin-bottom: 20px;
+}
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 230px;
+    background-color: #424242;
+    margin-top: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footercontent hr{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 1px;
+    width: 1280px;
+}
+
+.footercontent .logo{
+    margin-bottom: 20px;
+}
+
+.footercontent .sns{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footercontent .footertext{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    letter-spacing: normal;
+    font-weight: 300;
+}
+
+
+
